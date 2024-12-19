@@ -1,0 +1,235 @@
+HTML Example:
+------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React </title>
+</head>
+<body>
+    <div id="root">
+        <h1>Hello World!</h1>
+    </div>
+</body>
+</html>
+
+
+
+
+
+JavaScript Example:
+-------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React </title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const heading =document.createElement("h1");
+        heading.innerHTML="Hello World";
+        document.getElementById("root").appendChild(heading)
+    </script>
+</body>
+</html>
+
+
+
+
+
+CDN React Example:
+------------------
+index.html
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React </title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const heading =  React.createElement("h1",{},"Hello World From React!");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading)
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-create a new file 'app.js'
+app.js
+------
+var heading = React.createElement("h1",{},"Hello Reactjs From Demo HTML file");
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(heading)
+
+
+index.html
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+>Start Project and See the output
+
+
+
+
+
+
+
+
+app.js
+------
+var parent = React.createElement("div",{id:'parent'},
+    React.createElement('div',{id:'child'},
+        React.createElement('h1',{},'i\'m h1 tag')
+    )
+)
+var heading = React.createElement("h1",{id:"heading"},"Hello Reactjs From Demo HTML file");
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(parent)
+
+index.html
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+app.js
+------
+var parent = React.createElement("div",{id:'parent'},
+    React.createElement('div',{id:'child'},
+        [React.createElement('h1',{},'i\'m h1 tag'),React.createElement('h1',{},"I'm New HTML")]
+    )
+)
+var heading = React.createElement("h1",{id:"heading"},"Hello Reactjs From Demo HTML file");
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(parent)
+
+index.html
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+app.js
+------
+var parent = [React.createElement("div", { id: 'parent' },
+    React.createElement('div', { id: 'child' },
+        [React.createElement('h1', {}, 'i\'m h1 tag'), React.createElement('h1', {}, "I'm New HTML")]
+    )
+), React.createElement("div", { id: 'parent-1' },
+    React.createElement('div', { id: 'child-1' },
+        [React.createElement('h1', {}, 'i\'m h1 tag'), React.createElement('h1', {}, "I'm New HTML")]
+    )
+)]
+var heading = React.createElement("h1", { id: "heading" }, "Hello Reactjs From Demo HTML file");
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(parent)
+
+
+index.html
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
