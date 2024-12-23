@@ -1,12 +1,11 @@
-var parent = [React.createElement("div", { id: 'parent' },
-    React.createElement('div', { id: 'child' },
-        [React.createElement('h1', {}, 'i\'m h1 tag'), React.createElement('h1', {}, "I'm New HTML")]
-    )
-), React.createElement("div", { id: 'parent-1' },
-    React.createElement('div', { id: 'child-1' },
-        [React.createElement('h1', {}, 'i\'m h1 tag'), React.createElement('h1', {}, "I'm New HTML")]
-    )
-)]
-var heading = React.createElement("h1", { id: "heading" }, "Hello Reactjs From Demo HTML file");
-const root = ReactDOM.createRoot(document.querySelector("#root"));
-root.render(parent)
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React Element
+const heading  = React.createElement("h1",{id:'heading'},"Namaste React🚀");
+
+// JSX
+const jsxHeading = <h1 id="heading">Namaste React Using JSX</h1>
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(jsxHeading);

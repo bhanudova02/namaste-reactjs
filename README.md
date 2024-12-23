@@ -1,1 +1,16 @@
-# Namaste React
+# parcel
+-Dev Build
+-Local Server
+-HMR [Host Module Replacement]
+-File Watching Algorithm - Written in C++
+-Caching - Faster Builds
+-Image Optimazation
+-Minification
+-Bundling
+-Compress
+-Consistent Hashing
+-Code Spliting
+-Differntial Bundling - supports older browsers
+-Error Handling
+-HTTPS
+-

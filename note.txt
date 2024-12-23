@@ -233,3 +233,49 @@ index.html
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+02 Videos Class
+---------------
+npm install -D parcel
+
+FA: What -D Meaning?
+Ans: There are two types of packges 
+     One is Dev Dependecy [it is required for developement]
+     Another One is Developer Normal Dependecy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

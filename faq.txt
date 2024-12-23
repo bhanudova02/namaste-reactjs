@@ -1,4 +1,7 @@
 FAQ: What Is CDN?
-FA: What is 'crossorigin' inside the CDN?
+FAQ: What is 'crossorigin' inside the CDN?
 
 
+FAQ: What is JSX?
+Ans: JSX is not HTML in JS
+     JSX - HTML like Syntax
