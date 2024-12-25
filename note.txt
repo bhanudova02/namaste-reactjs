@@ -258,6 +258,50 @@ Ans: There are two types of packges
 
 
 
+FAQ: What is Props 
+Ans: Props is the shortcut of properties
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,3 +1,14 @@
-#heading{
-    color: red;
+.main-card:hover{
+  box-shadow: 2px 2px 8px blue;
+  background-color: rgba(172, 255, 47, 0.041);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* .grid-card:hover .card{
+    border: 0px;
+} */
+.grid-card{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    gap: 30px;
 }
